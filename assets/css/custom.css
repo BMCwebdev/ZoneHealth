@@ -260,4 +260,60 @@ body {
 .well {
     background-color: none;
     border: none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    margin-bottom: 0px;
+    min-height: 20px;
+    padding: 10px 0px 10px 10px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
     }
+    
+    .accordion-group {
+    border: 0px solid #E5E5E5;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 2px;
+    }
+    
+    .accordion-inner {
+    border-top: 0px solid #E5E5E5;
+    margin-left: 58px;
+    padding: 9px 0;
+    width: 600px;
+}
+
+.nav-list > li > a {
+    padding: 0px 0px 0px 0px;
+    }
+    
+    .nav-list > li > a, .nav-list .nav-header {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    }
+    
+    .nav-list {
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+a:hover, a:focus {
+    color: #005580;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    outline-offset: -2px;
+}
+
+.accordion-heading .accordion-toggle {
+    display: block;
+    line-height: 30px;
+    padding: 8px 15px;
+}
