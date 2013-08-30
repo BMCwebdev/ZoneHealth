@@ -106,14 +106,14 @@
 		padding-left: 40px;
 	    padding-top: 57px;
 */
-	    background-color: #ffffff;
-	    background-image: none;
-	    background-repeat: none;
-	    border: none;
-	    border-radius: none;
-	    box-shadow: none;
-	    min-height: none;
-	    width: 100%;
+	    background-color: #ffffff !important;
+	    background-image: none !important;
+	    background-repeat: none !important;
+	    border: none !important;
+	    border-radius: none !important;
+	    box-shadow: none !important;
+	    min-height: none !important;
+	    width: 100% !important;
 }
 
 	.center {
