@@ -4,18 +4,18 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>Zone Health</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
 <link id="colors" href="assets/css/bootstrap.css" rel="stylesheet" >
-<link id="colors" href="assets/css/custom.css" rel="stylesheet" >
+<link href="assets/css/custom.css" rel="stylesheet" >
+<link href="assets/css/non-responsive.css" rel="stylesheet">
 
 
 
-
-<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<!-- <link href="assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
 <link href="assets/css/jquery.mCustomScrollbar.css" rel="stylesheet">
 <!-- SOME THEMES FIX -->
 
@@ -50,11 +50,6 @@
 			border-radius: 0px;
 		}
 		
-		.page-header{
-			border:none;
-			padding: 10px 0px 0px;
-			margin: 0px 0 0px;
-		}
 		.brand{
 			
 			margin-left:20px;
@@ -134,7 +129,9 @@
 		
 	}
 	
+	
 		/*************** @media ******************/
+/*
 	@media (max-width: 940px){
 	.brand {
 		display:block;
@@ -160,6 +157,7 @@
 
 
 }
+*/
 
 	
 	 
@@ -185,20 +183,25 @@
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
+
+
   <body>
 
    <!-- SKYBAR -->
-   <div class="container">
-			<div class="alert alert-success" style="text-transform:uppercase; display:inline-block; box-sizing:border-box; -moz-box-sizing:border-box;width:100%;">
-					<div class="span4">Need Help? Call 1-855-456-ZONE (9663)</div>
-					<div class="span3 offset4"><img src="assets/images/spacer.gif" style="margin-left: 115px;" />My Zone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div>
+   <div class="container skybar">
+			<div class="alert alert-success" style="text-transform:uppercase; display:inline-block; box-sizing:border-box; -moz-box-sizing:border-box;width:100%;    background-color: #545454; border-color: #545454;">
+			<div class="skybarcenter">
+					<div class="span4 helpphone">Need Help? Call 1-855-456-ZONE (9663)</div>
+<!-- 					<div class="span3 offset4"><img src="assets/images/spacer.gif" style="margin-left: 62px;" />My Zone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> -->
+			</div>
 			</div>
    </div>
 <!--    END SKYBAR -->
    
    
-<!-- SEARCH BAR -->
-		    	   <div class="search">
+						<!-- SEARCH BAR -->
+<!-- 				<div class="span3 offset9"> -->
+<!-- 		    	   <div class="search"> -->
                     	<form action="/search_results" method="get" class="form-horizontal" id="custom-search-form">
 							<div class="input-append">
 								<input type="search" tabindex="1" placeholder="Search" autocomplete="off" name="q" class="search-query">
@@ -207,23 +210,23 @@
 									</span>
 							</div>
                     	</form>
-                    </div><!--end container for search -->
-                    
+                   <!--  </div> --><!--end container for search -->
+<!-- 				</div> -->
    
    
    
 
     <!-- PAGE-HEADER-->
-      <div class="page-header">
+      <div class="page-header" id="zone-page-header">
 		<div class="container">
-			<div class="row">
-				<div class="span4">
-					<h1><a class="brand" href="#"><img src="assets/images/logo.png"></a></h1>
+<!-- 			<div class="row"> -->
+				<div class="span3" style="margin-left:0px;">
+					<h1><a class="brand" href="#"><img src="assets/images/logo.png" width="200"></a></h1>
 				</div>
-				<div class="span8">
+				<div class="span9">
 						 <div class="navbar">
 						      <div class="navbar-inner">
-						        <div class="container">
+						        <div class="container navbarposition">
 						          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 						            <span class="icon-bar"></span>
 						            <span class="icon-bar"></span>
@@ -232,9 +235,9 @@
 						        
 						          <div class="nav-collapse collapse">
 						            <ul class="nav">
-						              <li><a href="#">About Us</a></li>
+						              <li class="active"><a href="#">About Us</a></li>
 						              <li><a href="#">Request a Coach</a></li>
-						              <li class="active"><a href="#">Become a Coach</a></li>
+						              <li><a href="#">Become a Coach</a></li>
 						              <li><a href="#">Opportunity</a></li>
 						              <li><a href="#">Testimonials</a></li>
 						              <li><a href="#">Resources</a></li>
@@ -257,8 +260,12 @@
 						        </div><!-- container -->
 						      </div><!-- navbar-inner -->
 						 </div><!-- navbar -->
-				</div><!-- span8 -->
-			</div><!-- row -->
+				</div><!-- span9 -->
+<!-- 			</div> --><!-- row -->
+			
+
+
+
 		</div><!-- container -->
       </div><!-- page-header -->
 <!-- PAGE-HEADER-->
@@ -269,7 +276,7 @@
 
 
 			<div class="container">
-                <div class="row-fluid">
+                <div class="row">
                     <div id="aboutussidebar" class="span3 aboutussidebar">
                     	<div class="well sidebar-nav">
 							<ul class="nav nav-list">
@@ -287,21 +294,30 @@
 
 
                     <div class="span6">
-						<h3 class="clear-left testtitle"><strong>Anti-Inflammatory Nutrition Certification Test Kit</strong></h3>
+						<h3 class="clear-left testtitle"><strong>Anti-Inflammatory Nutrition <br />Certification Test Kit</strong></h3>
 						<p>Taking the test is the next step to helping other better their health as well as your own.</p>
-						
+
+						<img src="assets/images/spacer.gif" height="1" />
+
 						<p><strong>What you will receive:</strong></p>
 						
 						<p>
 							<ol>
-								<li>A CD-ROM of a series of anti-inflammatory nutrition lessons.</li>
-								<li>The following books; The Zone, The Anti-Aging Zone, The OmegaRx Zone, The Anti-Inflammation Zone, and Toxic Fat.</li>
+								<li>A CD-ROM of a series of anti-inflammatory nutrition presentations by Dr. Sears.</li>
+								<li>The following books; 
+									<ul style="list-style-type: none;">
+										<li>The Zone</li>
+										<li>The Anti-Aging Zone</li>
+										<li>The OmegaRx Zone</li>
+										<li>The Anti-Inflammation Zone</li>
+										<li>Toxic Fat</li>
+									</ul>
 								<li>The actual test itself.</li>
 							</ol>
 						</p>
 						
 						<div class="kitcost">
-						<h3 class="clear-left testtitle">Cost of complete kit: <strong>$150.00</strong></h3>
+						<h3 class="clear-left testtitle">Cost of complete kit: <strong>$195.00</strong></h3>
 						</div>
 
 							  <button type="button" class="btn btn-custom">ADD TO CART</button>
@@ -309,7 +325,7 @@
                     
                     
                     <div class="span3">
-                    	<img src="assets/images/whycoachsidebar.png" />
+                    	<img src="assets/images/whycoachsidebar.png" style="border:1px solid #CECECE;" />
                     </div>
                 </div>
 			</div>
@@ -322,7 +338,7 @@
                 <div class="span1">&nbsp;</div>
                 <div class="span2">
                     <ul>
-                        <li><strong>MEDIA</strong></li>
+                        <li><strong style=" color: #777777; text-decoration: none;">MEDIA</strong></li>
 
                         <li><a href="/press_room">Press Room</a></li>
                     </ul>
@@ -330,7 +346,7 @@
 
                 <div class="span2">
                     <ul>
-                        <li><strong><a href="/customer_service" style=" color: #000000; text-decoration: none;">NEED HELP?</a></strong></li>
+                        <li><strong><a href="/customer_service" style=" color: #777777; text-decoration: none;">NEED HELP?</a></strong></li>
 
                         <li><a href="/customer_service">Customer Service</a></li>
 
@@ -346,7 +362,7 @@
 
                 <div class="span2">
                     <ul>
-                        <li><strong><a href="/shipping_intl" style=" color: #000000; text-decoration: none;">INTERNATIONAL CUSTOMERS</a></strong></li>
+                        <li><strong><a href="/shipping_intl" style=" color: #777777; text-decoration: none;">INTERNATIONAL CUSTOMERS</a></strong></li>
 
                         <li><strong>978-539-0100</strong></li>
 
@@ -356,9 +372,9 @@
 
                 <div class="span2">
                     <ul>
-                        <li><strong>CONTACT US</strong></li>
+                        <li><strong style=" color: #777777; text-decoration: none;">CONTACT US</strong></li>
 
-                        <li><strong>800-404-8171</strong></li>
+                        <li><strong>855-463-ZONE (9663)</strong></li>
 
                         <li><a href="mailto:customerservice@zoneliving.com">Send Email</a></li>
                     </ul>
