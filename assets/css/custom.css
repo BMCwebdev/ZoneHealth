@@ -1,3 +1,7 @@
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 1024px;
+}
+
 #wrap {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 45px 0px;
@@ -179,7 +183,7 @@
 
 .nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
     color: #000000;
-    background-color: #F5F5F5;
+    background-color: #ffffff;
     }
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
@@ -258,7 +262,7 @@ body {
 }
 
 .well {
-    background-color: none;
+    background-color: #ffffff;
     border: none;
     border-radius: 0 0 0 0;
     box-shadow: none;
@@ -316,4 +320,8 @@ a:focus {
     display: block;
     line-height: 30px;
     padding: 8px 15px;
+}
+
+.front_page_h3 {
+	margin-top: -10px;
 }
