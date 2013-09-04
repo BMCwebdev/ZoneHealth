@@ -209,6 +209,7 @@
 	    bottom: 50px;
 	    height: 40px;
 	    top: 0px;
+		left: -390px;
     }
     
     .row-fluid [class*="span"] {
@@ -285,7 +286,7 @@ body {
     
     .accordion-inner {
     border-top: 0px solid #E5E5E5;
-    margin-left: 58px;
+    margin-left: 53px;
     padding: 9px 0;
     width: 600px;
 }
@@ -324,4 +325,30 @@ a:focus {
 
 .front_page_h3 {
 	margin-top: -10px;
+}
+
+	.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: #ffffff;
+    color: #3D8CC4;
+    }
+    
+    .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+    background-repeat: repeat-x;
+    color: #3D8CC4;
+    outline: 0 none;
+    text-decoration: none;
+}
+
+.navbar-inner {
+    background-color: #FAFAFA;
+    background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
+    background-repeat: repeat-x;
+    border: 1px solid #D4D4D4;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    min-height: 40px;
+    padding-left: 70px;
+    padding-right: 20px;
 }
