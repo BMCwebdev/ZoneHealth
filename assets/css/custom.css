@@ -328,7 +328,7 @@ a:focus {
 }
 
 .front_page_h3 {
-	margin-top: -10px;
+	margin-top: 10px;
 }
 
 	.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
